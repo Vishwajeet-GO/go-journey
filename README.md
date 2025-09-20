@@ -20,4 +20,3 @@ This repo will track my progress, projects, and experiments as I build strong ba
 ├── 03-projects/        # Small real-world projects
 ├── 04-devops/          # Docker, CI/CD, Kubernetes experiments
 ├── 05-ai-integrations/ # Connecting AI models with Go
-└── README.md
