@@ -1,4 +1,4 @@
-# 🧮 Word Counter in Go  
+# Word Counter in Go  
 
 ![Made with Go](https://img.shields.io/badge/Made%20with-Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![Beginner Friendly](https://img.shields.io/badge/Level-Beginner-brightgreen?style=for-the-badge)
@@ -6,13 +6,13 @@
 
 ---
 
-## 📘 Overview  
+## Overview  
 The **Word Counter** is a beginner-friendly Go program that counts how many times each word appears in a sentence and shows the **total number of words**.  
 It’s perfect for learning about **maps**, **loops**, and **string handling** in Go.  
 
 ---
 
-## 🧠 Concepts Used  
+## Concepts Used  
 - Variables & Constants  
 - For Loops  
 - Maps  
@@ -22,7 +22,7 @@ It’s perfect for learning about **maps**, **loops**, and **string handling** i
 
 ---
 
-## ⚙️ How It Works  
+## How It Works  
 1. Takes a sentence input from the user.  
 2. Converts the sentence to lowercase for case-insensitive comparison.  
 3. Splits it into words using `strings.Fields()`.  
@@ -31,7 +31,7 @@ It’s perfect for learning about **maps**, **loops**, and **string handling** i
 
 ---
 
-## 🧩 Example  
+## Example  
 
 **Input:**  
 Go is Great and Go is Fun
