@@ -5,23 +5,23 @@ import "fmt"
 func main() {
 
 	var maths int
-	fmt.Println("Enter the marks of Maths :")
+	fmt.Println("Enter the marks of Maths out of 100:")
 	fmt.Scanln(&maths)
 
 	var science int
-	fmt.Println("Enter the marks of Science :")
+	fmt.Println("Enter the marks of Science out of 100:")
 	fmt.Scanln(&science)
 
 	var english int
-	fmt.Println("Enter the marks of English :")
+	fmt.Println("Enter the marks of English out of 100:")
 	fmt.Scanln(&english)
 
 	var history int
-	fmt.Println("Enter the marks of History :")
+	fmt.Println("Enter the marks of History out of 100:")
 	fmt.Scanln(&history)
 
 	var hindi int
-	fmt.Println("Enter the marks of Hindi :")
+	fmt.Println("Enter the marks of Hindi ")
 	fmt.Scanln(&hindi)
 
 	total := maths + science + english + history + hindi
