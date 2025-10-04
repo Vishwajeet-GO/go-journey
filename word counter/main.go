@@ -5,7 +5,17 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"unicode"
 )
+
+func removePunctuation(s string) string {
+	return strings.Map(func(r rune) rune {
+		if unicode.IsPunct(r) {
+			return -1
+		}
+		return r
+	}, s)
+}
 
 func main() {
 
@@ -20,11 +30,13 @@ func main() {
 
 	wordCount := make(map[string]int)
 	for _, word := range words {
-		wordCount[word]++
+		wordCount[strings.ToLower(word)]++
 	}
 
 	fmt.Println("\nWord frequency:")
 	for word, count := range wordCount {
 		fmt.Printf("%s: %d\n", word, count)
 	}
+
+	fmt.Println("\nTotal words:", len(words))
 }
