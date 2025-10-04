@@ -1,14 +1,30 @@
 package main
 
 import (
-	"encoding/json"
-	"net/http"
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
 )
 
 func main() {
-	http.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
-		json.NewEncoder(w).Encode(map[string]string{"message": "pong"})
-	})
-	println("Server starting on http://0.0.0.0:8080")
-	http.ListenAndServe("0.0.0.0:8080", nil)
+
+	var sentence string
+	fmt.Println("Enter any sentence:")
+
+	reader := bufio.NewReader(os.Stdin)
+	sentence, _ = reader.ReadString('\n')
+	sentence = strings.TrimSpace(sentence)
+
+	words := strings.Fields(sentence)
+
+	wordCount := make(map[string]int)
+	for _, word := range words {
+		wordCount[word]++
+	}
+
+	fmt.Println("\nWord frequency:")
+	for word, count := range wordCount {
+		fmt.Printf("%s: %d\n", word, count)
+	}
 }
