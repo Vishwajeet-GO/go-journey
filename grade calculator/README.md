@@ -1,19 +1,19 @@
-# 🎓 Student Grade Calculator
+#  Student Grade Calculator
 
 A simple Go program that calculates a student’s grade percentage and assigns a letter grade based on the score.
 
-## 🧠 Concepts Used
+##  Concepts Used
 - Variables and Constants  
 - If-Else Conditions  
 - Functions  
 - Basic Input/Output
 
-## ⚙️ How It Works
+##  How It Works
 - The user enters marks for several subjects.
 - The program calculates the total, average, and percentage.
 - Based on the percentage, a letter grade (A, B, C, D, or F) is displayed.
 
-## 🖥️ Example Output
+##  Example Output
 
 Enter Marks for 5 subjects
 81
